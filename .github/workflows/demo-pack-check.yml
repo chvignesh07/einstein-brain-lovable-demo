@@ -1,0 +1,20 @@
+name: demo-pack-check
+
+# Proves the repo self-checks for leaks and structure on every push/PR.
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Make scripts executable
+        run: chmod +x scripts/*.sh
+      - name: Run demo (sanity)
+        run: bash scripts/demo.sh
+      - name: Verify demo pack (leak + structure check)
+        run: bash scripts/verify-demo-pack.sh

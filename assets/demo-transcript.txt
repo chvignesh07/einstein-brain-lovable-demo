@@ -1,0 +1,19 @@
+DEMO TRANSCRIPT (narration to read over the terminal output)
+
+[0:00] "This is the sanitized demo — fictional Acme Cloud data, no private system. It shows the trust loop."
+
+[0:08] Run: bash scripts/demo.sh
+
+[0:12] KNOWN ANSWER — "Ask a real company question, get a grounded answer, cited back to the source node, with provenance — this one's human-verified."
+
+[0:25] ABSTENTION — "Now ask something it doesn't have. It abstains. It will not invent a policy. On the live system that's 1.0 abstention on our eval set — zero made-up facts. This is the part no incumbent I've found ships."
+
+[0:42] PROVENANCE — "Every node knows whether it's human-verified or machine-generated, and when it was last checked. Human facts outrank generated ones."
+
+[0:55] GOVERNED WRITE — "When an agent learns something new, it doesn't write to memory. It writes a draft to quarantine — not trusted yet."
+
+[1:08] HUMAN STAMP — "A human promotes it. Sensitive things — pricing, compliance — are human-only. Rejected drafts are archived, never deleted. Only then is it trusted."
+
+[1:20] Run: bash scripts/verify-demo-pack.sh — "And the repo self-checks for leaks and structure. PASS."
+
+[1:30] "That's the trust layer. The live system runs the same loop on a private corpus. I'm looking for one design partner to prove it on a real workflow."

@@ -1,0 +1,45 @@
+$ bash scripts/demo.sh
+
+Einstein Brain — Trust Loop Demo (sanitized / fictional 'Acme Cloud')
+retrieve -> cite -> abstain if missing -> draft -> quarantine -> human stamp -> promote
+
+1) KNOWN ANSWER  (grounded + cited)
+Q: How are refunds handled on standard plans?
+A: Self-serve refund within 14 days. After 14 days: annual plans pro-rated;
+   monthly plans non-refundable mid-cycle.
+   source: examples/sample-brain-node.md   (generation:0, human-verified)
+
+2) UNKNOWN ANSWER  (abstention — the differentiator)
+Q: What is the refund policy for enterprise annual contracts in Germany?
+A: [ABSTAIN] No grounded node for this. The Brain returns no answer
+   rather than inventing one. (Eval-set abstention: 1.0 — zero ghost answers.)
+
+3) PROVENANCE  (frontmatter schema only — no sensitive bodies)
+  generation: 0          # 0 = human-authored (highest trust)
+  source_type: human
+  last_verified: 2026-06-10
+  expires_after_days: 90  # drives a 'due for review' flag (display-only)
+
+4) GOVERNED WRITE  (a new fact is quarantined, not trusted)
+  draft written to: _drafts/[DRAFT]-day20-annual-refund-precedent.md
+  status: draft   needs_review: true   generation: 1 (machine-drafted)
+  -> see examples/sample-librarian-draft.md
+
+5) HUMAN STAMP  (promotion requires a person)
+  reviewer action: promote_draft  ->  status: active, generation stamped,
+  recorded_at set, moved to a category. Sensitive lanes (pricing/compliance)
+  are human-only. Rejected drafts are archived, never deleted.
+  RESULT: only after a human stamp is the node trusted + retrievable.
+
+Done. This is the shape; the live system runs the same loop on a private corpus.
+
+$ bash scripts/verify-demo-pack.sh
+== Einstein Brain demo-pack verifier ==
+[1] required files        - all present
+[2] forbidden strings     - none
+[3] PII patterns          - none (placeholders allowed)
+[4] no .DS_Store          - none
+[5] scripts executable    - checked
+[6] README sections       - checked
+[7] sample Skill          - checked
+RESULT: PASS ✅

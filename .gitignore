@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+# recordings / large local assets (keep the repo text-only by default)
+*.mov
+*.mp4
+*.cast
+# editor cruft
+*.swp
+.idea/
+.vscode/
