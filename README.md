@@ -56,6 +56,14 @@ Nothing becomes "true" without a human stamp. Sensitive lanes (pricing, complian
 ## For Lovable
 Lovable Skills are portable `SKILL.md` markdown — the right *shape*. Einstein Brain is the **trust layer** around it: provenance + abstention + a human gate. A Lovable Skill can be the executable output of a Brain-verified node. A sample, importable Skill lives in [`skills/trusted-company-memory/`](skills/trusted-company-memory/SKILL.md). Details: [`docs/lovable-specific.md`](docs/lovable-specific.md). *(Complementary — not a replacement for Knowledge/Skills.)*
 
+## Import the sample Skill into Lovable
+The Skill follows Lovable's `SKILL.md` shape, so you can import it straight from this public repo:
+1. In Lovable, choose **Add → Import from GitHub**.
+2. Paste this repo URL: `https://github.com/chvignesh07/einstein-brain-lovable-demo` (or point at the `skills/trusted-company-memory` subdirectory).
+3. The `trusted-company-memory` skill loads on demand — it tells an agent to answer only from verified knowledge, **abstain** when there's no grounded fact, and route any new fact through a human stamp.
+
+It's a sample target output (the auto-compiler isn't built yet) — but it runs as a real Lovable Skill today. See [`skills/trusted-company-memory/SKILL.md`](skills/trusted-company-memory/SKILL.md).
+
 ## Run the demo harness
 ```bash
 git clone <this-repo> && cd einstein-brain-lovable-demo
@@ -68,7 +76,7 @@ No network, no daemon, no private access required. CI runs the same on every pus
 Read this — it's the point: [`LIMITATIONS.md`](LIMITATIONS.md). Short version: read+trust layer is real; safe auto-write, connectors, and executable-skill generation are roadmap; metrics are on our eval set; no enterprise security certs yet (strengths are open + local + auditable).
 
 ## Design-partner ask
-One painful workflow, two weeks, scoped read access, ~15 real questions, feedback. Success = fewer hallucinations + abstains on unknowns + "I'd trust this." No cash — feedback + a reference + case-study rights. See [`DESIGN_PARTNER.md`](DESIGN_PARTNER.md).
+A design partnership, not a sale: pick one painful workflow, give scoped read access + ~15 real questions + a few hours of a workflow owner's time. In two weeks we measure the hallucination drop on your own data. In return I ask for honest feedback, a reference, and the right to write up the result. See [`DESIGN_PARTNER.md`](DESIGN_PARTNER.md).
 
 ---
 **Start here:** [`QUICKSTART.md`](QUICKSTART.md) · [`PITCH.md`](PITCH.md) · [`docs/yc-alignment.md`](docs/yc-alignment.md) · [`SECURITY_NOTES.md`](SECURITY_NOTES.md)

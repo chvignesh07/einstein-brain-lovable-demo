@@ -30,8 +30,12 @@ echo "[3] PII patterns (real emails / phone numbers)"
 if grep -rInE '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|[0-9]{3}[-.][0-9]{3}[-.][0-9]{4}' --exclude-dir=.git . 2>/dev/null \
    | grep -v "$SELF" | grep -viE 'example\.com|acme|democo|your-?org|user@'; then note "POSSIBLE PII ^"; FAIL=1; else note "none (placeholders allowed)"; fi
 
-echo "[4] no .DS_Store"
-if find . -name .DS_Store -not -path './.git/*' | grep -q .; then note ".DS_Store present"; FAIL=1; else note "none"; fi
+echo "[4] no committed .DS_Store / junk (gitignored local cruft is OK — it can't reach the repo)"
+if git rev-parse --git-dir >/dev/null 2>&1; then
+  if git ls-files | grep -qi 'DS_Store'; then note "TRACKED .DS_Store"; FAIL=1; else note "none tracked"; fi
+else
+  if find . -name .DS_Store -not -path './.git/*' | grep -q .; then note ".DS_Store present (no git to check tracking)"; FAIL=1; else note "none"; fi
+fi
 
 echo "[5] scripts executable"
 for s in scripts/demo.sh scripts/verify-demo-pack.sh; do [ -x "$s" ] || { note "not +x: $s"; FAIL=1; }; done; note "checked"

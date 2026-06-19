@@ -16,7 +16,7 @@ Einstein Brain does those three today as a read layer: 709 real nodes, ~97% retr
 Honest status: the read+trust layer is real; safe auto-write and connectors are next; executable-skill generation is roadmap. I'm not pitching a finished product — I'm pitching the trust layer Lovable Skills could sit on, and asking for one workflow to prove it together."
 
 ## The ask
-One workflow, two weeks, scoped read access, ~15 real questions, feedback. Success = fewer hallucinations, abstains on unknowns, the owner says "I'd trust this." No cash — feedback + a reference + case-study rights.
+A design partnership, not a sale: one workflow, two weeks, scoped read access + ~15 real questions + a workflow owner's time. Success = fewer hallucinations, abstains on unknowns, the owner says "I'd trust this." In return I ask for honest feedback, a reference, and the right to write up the result.
 
 ## Never say
 "complete company brain" · "fully autonomous" · "production-ready" · "auto-write safe" · "zero hallucination" (without "on our eval set") · "better than Lovable/Glean/Copilot/Databricks." Say "governed memory layer," "production-grade read layer; governed-write in pilot," "complementary trust layer."

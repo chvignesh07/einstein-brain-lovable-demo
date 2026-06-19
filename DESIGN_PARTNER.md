@@ -23,9 +23,11 @@ An AI-native or fast-scaling team whose company knowledge is fragmented across t
 - Ingestion is **human-reviewed** during the pilot (the auto-sanitize layer is in build).
 - Clear exit: it's files — keep or delete them.
 
-## The ask (non-cash)
-- Your **feedback**, a **reference call**, and **case-study rights** (named or anonymized).
-- Optional: a letter of intent ("would pay $X/mo if it hits Y").
+## The exchange
+This is a design partnership, not a sale — the value runs both ways:
+- **You get:** a trust layer stood up on your own workflow in two weeks, a measured before/after, and direct input into the roadmap.
+- **I ask for:** honest feedback, a **reference call**, and the **right to write up the result** (named or anonymized).
+- Optional, if it lands: a letter of intent ("would pay $X/mo once it hits Y") — useful to both of us, costs you nothing now.
 
 ## Success criteria (agreed up front)
 Grounded + cited answers, **abstention on unknowns (no confident wrong answers)**, measurably fewer hallucinations than the current approach, and the workflow owner saying "I'd trust this."
